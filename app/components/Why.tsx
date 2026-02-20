@@ -65,31 +65,31 @@ const Why = (props: Props) => {
                 </div>
             </div>
         </div>
-        <div className="flex flex-col items-center gap-5 w-full pb-20 border-b-2 border-darkorange">
+        <div className="flex flex-col items-center gap-5 w-full pb-20 px-3 border-b-2 border-darkorange">
             <TextStack text1='OUR CLIENTS' text2='Trusted by 2.5k+ restaurant' />
-            <div className="flex flex-wrap md:w-[90%] justify-center items-center gap-5">
-                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out">
+            <div className="md:flex grid grid-cols-1 flex-wrap md:w-[90%] justify-center items-center gap-5 w-full">
+                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out flex justify-center items-center">
                     <Image src={tradicional} width={1000} height={1000} alt='tradicional' className='w-40 saturate-0 group-hover:saturate-100 transition-all duration-200 ease-in-out' />
                 </div>
-                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out">
+                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out flex justify-center items-center">
                     <Image src={fooddrinks} width={1000} height={1000} alt='tradicional' className='w-40 saturate-0 group-hover:saturate-100 transition-all duration-200 ease-in-out' />
                 </div>
-                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out">
+                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out flex justify-center items-center">
                     <Image src={buggers} width={1000} height={1000} alt='tradicional' className='w-40 saturate-0 group-hover:saturate-100 transition-all duration-200 ease-in-out' />
                 </div>
-                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out">
+                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out flex justify-center items-center">
                     <Image src={fooddrinks1} width={1000} height={1000} alt='tradicional' className='w-40 saturate-0 group-hover:saturate-100 transition-all duration-200 ease-in-out' />
                 </div>
-                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out">
+                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out flex justify-center items-center">
                     <Image src={fooddrinks2} width={1000} height={1000} alt='tradicional' className='w-40 saturate-0 group-hover:saturate-100 transition-all duration-200 ease-in-out' />
                 </div>
-                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out">
+                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out flex justify-center items-center">
                     <Image src={freshfood} width={1000} height={1000} alt='tradicional' className='w-40 saturate-0 group-hover:saturate-100 transition-all duration-200 ease-in-out' />
                 </div>
-                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out">
+                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out flex justify-center items-center">
                     <Image src={healthyfood} width={1000} height={1000} alt='tradicional' className='w-40 saturate-0 group-hover:saturate-100 transition-all duration-200 ease-in-out' />
                 </div>
-                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out">
+                <div className="p-5 rounded-xl shadow group cursor-pointer hover:scale-102 transition-transform duration-200 ease-in-out flex justify-center items-center">
                     <Image src={coffee} width={1000} height={1000} alt='tradicional' className='w-40 saturate-0 group-hover:saturate-100 transition-all duration-200 ease-in-out' />
                 </div>
             </div>
@@ -136,12 +136,12 @@ const Why = (props: Props) => {
             </div>
         </GlobalContainer>
         <GlobalContainer>
-            <div className="py-20 px-15 bg-majororange rounded-2xl flex items-center justify-between">
-                <div className="flex items-center gap-5">
+            <div className="py-20 px-2 md:px-15 bg-majororange rounded-2xl flex md:flex-row gap-5 flex-col items-center justify-between">
+                <div className="flex md:flex-row flex-col items-center gap-5">
                     <Image src={whiteSupport} width={1000} height={1000} alt='white support' className='w-20' />
                     <div className="flex flex-col gap-2">
-                        <h5 className="text-4xl font-bold text-white">Need Support</h5>
-                        <p className="text-white">Lorem Ipsum is simply dummy text of the printing.</p>
+                        <h5 className="text-4xl font-bold text-white md:text-left text-center">Need Support</h5>
+                        <p className="text-white md:text-left text-center">Lorem Ipsum is simply dummy text of the printing.</p>
                     </div>
                 </div>
                 <div className="flex gap-5">

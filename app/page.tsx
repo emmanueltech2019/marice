@@ -5,10 +5,10 @@ import Why from "./components/Why";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Hero />
       <Reviews />
       <Why />
-    </>
+    </div>
   );
 }

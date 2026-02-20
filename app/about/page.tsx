@@ -10,7 +10,7 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-    <div className='bg-[#faf9f5]'>
+    <div className='bg-[#faf9f5] overflow-x-hidden'>
      <AboutUsHero />
      <Overview />
      <Why />
