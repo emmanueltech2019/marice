@@ -16,7 +16,7 @@ const Footer = (props: Props) => {
         <GlobalContainer className='pt-10'>
             <div className="flex gap-10 md:flex-row flex-col">
                 <div className="flex flex-col gap-10 md:w-[40%] flex-shrink-0">
-                    <Image src={logo} width={1000} height={1000} alt='logo' className='w-40' />
+                    <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771592225/Screenshot_2026-02-20_at_13.55.13_axehsl.png"} width={1000} height={1000} alt='logo' className='w-40' />
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem sum has been the industrys standard dummytext ever since the when an unknown printer took.</p>
                     <div className="flex gap-5">
                         <Button image src={appstore} />
