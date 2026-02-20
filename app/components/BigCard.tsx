@@ -28,7 +28,7 @@ const BigCard = ({src, title, description, lists, buttonText, padding, className
   return (
     <div className={`${padding ? "p-5" : ""} ${noBorder || "border border-darkorange"} bg-white rounded-3xl flex flex-col gap-5 items-start`}>
         {notImage ? null : (
-            <Image src={src || maricelogo} width={1000} height={1000} alt='image' className='rounded-3xl w-full' />
+            <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771592225/Screenshot_2026-02-20_at_13.55.13_axehsl.png"} width={1000} height={1000} alt='image' className='rounded-3xl w-full' />
         )}
         {notImage ? (
             <div className="py-1 px-3 bg-lightorange text-majororange text-[12px] rounded-full font-bold">{titleText}</div>
