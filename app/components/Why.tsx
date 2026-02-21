@@ -33,6 +33,8 @@ import toptips from '@/app/src/images/toptips.png'
 import supporting from '@/app/src/images/supporting.png'
 import whiteSupport from '@/app/src/images/whiteSupport.png'
 import { Mail, PhoneCall } from 'lucide-react'
+import SubFooter from '../about/components/SubFooter'
+import Support from './Support'
 
 type Props = {}
 
@@ -116,18 +118,7 @@ const Why = (props: Props) => {
                 <Card center className='items-center' src={check} title='24/7 Support' description='Get assistance anytime with our 24/7 support team, ready to help you always!' optional='03' />
             </div>
         </GlobalContainer>
-        <GlobalContainer className='bg-majororange mx-5 rounded-3xl border border-darkorange shadow py-15 items-center grid md:grid-cols-2 gap-10 relative'>
-            <div className="flex flex-col text-white gap-5 items-start">
-                <div className="py-1 px-3 bg-lightorange text-majororange text-[12px] rounded-full font-bold">DOWNLOAD</div>
-                <h5 className="text-5xl font-bold">Download app to enjoy 4500+ foods</h5>
-                <p className=''>Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industrys.</p>
-                <div className="flex gap-3">
-                    <Button image src={googleplay} />
-                    <Button image src={appstore} />
-                </div>
-            </div>
-            <Image src={downloadApp} width={1000} height={1000} alt='download app' />
-        </GlobalContainer>
+        <SubFooter />
         <GlobalContainer className='flex flex-col gap-10'>
             <TextStack text1='BLOG POST' text2='Insights & Inspirations' />
             <div className='grid md:grid-cols-2 gap-10'>
@@ -135,27 +126,7 @@ const Why = (props: Props) => {
                 <BigCard src={supporting} showText text1='Cyrus' text2='Oct 13, 2026' text3='25 Comments' title='How Our App Supporting Local Restaurants' hideButton className='py-5 px-10' />
             </div>
         </GlobalContainer>
-        <GlobalContainer>
-            <div className="py-20 px-2 md:px-15 bg-majororange rounded-2xl flex md:flex-row gap-5 flex-col items-center justify-between">
-                <div className="flex md:flex-row flex-col items-center gap-5">
-                    <Image src={whiteSupport} width={1000} height={1000} alt='white support' className='w-20' />
-                    <div className="flex flex-col gap-2">
-                        <h5 className="text-4xl font-bold text-white md:text-left text-center">Need Support</h5>
-                        <p className="text-white md:text-left text-center">Lorem Ipsum is simply dummy text of the printing.</p>
-                    </div>
-                </div>
-                <div className="flex gap-5">
-                    <button className='p-5 text-white bg-black hover:text-black hover:bg-white flex items-center gap-1 font-bold rounded-xl transition-all duration-200 ease-in-out'>
-                        <PhoneCall />
-                        Call us now
-                    </button>
-                    <button className='p-5 text-black bg-white hover:text-white hover:bg-black flex items-center gap-1 font-bold rounded-xl transition-all duration-200 ease-in-out'>
-                        <Mail />
-                        Email us
-                    </button>
-                </div>
-            </div>
-        </GlobalContainer>
+        <Support />
     </div>
   )
 }

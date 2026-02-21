@@ -15,13 +15,13 @@ const Navbar = (props: Props) => {
         <Image src={"https://res.cloudinary.com/wise-solution-inc/image/upload/v1771592225/Screenshot_2026-02-20_at_13.55.13_axehsl.png"} width={1000} height={1000} alt='logo' className='w-35' />
         <div className="flex items-center gap-3 md:gap-20">
             <ul className={`flex z-1 items-center gap-10 md:relative fixed md:flex-row flex-col md:bg-transparent bg-majorgray w-full left-0 md:top-0 top-20 md:p-0 p-10 transition-all duration-200 ease-in-out ${navActive ? "opacity-100 translate-y-0" : 'md:translate-y-0 -translate-y-100 md:opacity-100 opacity-0'}`}>
-                <li className='font-semibold hover:text-majororange transition-bg duration-200'>
+                <li onClick={() => setNavActive(false)} className='font-semibold hover:text-majororange transition-bg duration-200'>
                     <Link href={'/'}>Home</Link>
                 </li>
-                <li className='font-semibold hover:text-majororange transition-bg duration-200'>
+                <li onClick={() => setNavActive(false)} className='font-semibold hover:text-majororange transition-bg duration-200'>
                     <Link href={'/about'}>About</Link>
                 </li>
-                <li className='font-semibold hover:text-majororange transition-bg duration-200'>
+                <li onClick={() => setNavActive(false)} className='font-semibold hover:text-majororange transition-bg duration-200'>
                     <Link href={'/contact'}>Contact</Link>
                 </li>
             </ul>
