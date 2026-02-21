@@ -89,19 +89,19 @@ const Reviews = (props: Props) => {
                 }}>
                   {carouselArray.map((carousel, index) => (
                     <div ref={(el) => {carouselRefs.current[index] = el}} key={index} className="flex md:flex-row flex-col items-center gap-10 flex-shrink-0 w-full">
-                      <Image src={carousel.image} width={1000} height={1000} alt={carousel.name} className='w-50' />
+                      <Image src={carousel.image} width={1000} height={1000} alt={carousel.name} className='md:w-50 w-30' />
                       <div className="flex flex-col gap-5">
                         <p>{carousel.star}</p>
-                        <h4 className="text-3xl font-semibold">{carousel.description}</h4>
+                        <h4 className="md:text-3xl text-xl font-semibold">{carousel.description}</h4>
                         <p className="font-semibold text-xl">{carousel.name}, <span className="text-md font-light">{carousel.location}</span></p>
                       </div>
                     </div>
                   ))}
                   <div className="flex md:flex-row flex-col items-center gap-10 flex-shrink-0 w-full">
-                      <Image src={emma} width={1000} height={1000} alt={'olivia'} className='w-50' />
+                      <Image src={emma} width={1000} height={1000} alt={'olivia'} className='md:w-50 w-30' />
                       <div className="flex flex-col gap-5">
                         <p>⭐⭐⭐⭐⭐</p>
-                        <h4 className="text-3xl font-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem ipsum has been the industrys dummy</h4>
+                        <h4 className="md:text-3xl text-xl font-semibold">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem ipsum has been the industrys dummy</h4>
                         <p className="font-semibold text-xl">Emma Charlotte, <span className="text-md font-light">Washington</span></p>
                       </div>
                     </div>
