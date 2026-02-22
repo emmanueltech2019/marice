@@ -63,7 +63,7 @@ const Footer = (props: Props) => {
                     <Instagram />
                 </div>
             </div>
-            <p>Design & developed by <Link href='/' className='underline'>Vine Africa</Link></p>
+            {/* <p>Design & developed by <Link href='/' clasxsName='underline'>Vine Africa</Link></p> */}
         </GlobalContainer>
     </div>
   )
